@@ -210,6 +210,47 @@ section {
     padding: 20px;
 }
 
+/* Language Playlists */
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.language-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 30px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+.language-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 10px 25px rgba(0, 229, 255, 0.1);
+}
+
+.language-flag {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.language-card h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 8px;
+}
+
+.language-link {
+    color: var(--accent-cyan);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
 /* Sponsorship */
 .sponsorship-box {
     background: linear-gradient(135deg, #161f33 0%, #0d1424 100%);
